@@ -9,6 +9,7 @@ export type Archetype = "Bull" | "Bear" | "Hybrid";
 export interface TraitConfig {
   name: string;
   category: TraitCategory;
+  asset?: string;  // Optional: Asset filename (e.g. "red-crashing-candles.png")
 }
 
 export interface LayerConfig {

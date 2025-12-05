@@ -72,6 +72,51 @@ SEED="my-custom-seed" npm run meta:generate
 
 Output: `tools/meta-gen/out/metadata/001.json` bis `333.json`
 
+### Bildgenerierung
+
+Der Generator unterstützt automatisches Layer-basiertes Compositing:
+
+```bash
+# 1. Erstelle Placeholder-Assets für Tests
+npm run meta:placeholders
+
+# 2. Generiere Bilder aus Metadaten
+npm run meta:images
+
+# 3. Alles in einem Schritt (Metadaten + Bilder)
+npm run meta:all
+```
+
+**Asset-Struktur:**
+```
+tools/meta-gen/assets/
+  /background/
+    red-crashing-candles.png
+    ordinary-world-apartment.png
+    ...
+  /body/
+    skinny-shaking-newbie.png
+    couch-potato-degen.png
+    ...
+  /eyes/, /headwear/, /mouth/, /accessory/, /aura/
+```
+
+**Anforderungen an Assets:**
+- Gleiche Canvas-Größe (empfohlen: 1024×1024px)
+- PNG mit transparentem Hintergrund
+- Dateinamen automatisch aus Trait-Namen generiert (oder manuell in Config definiert)
+
+**Layer-Reihenfolge (Bottom → Top):**
+1. Background
+2. Body
+3. Headwear
+4. Eyes
+5. Mouth
+6. Accessory
+7. Aura
+
+Output: `tools/meta-gen/out/images/1.png` bis `333.png`
+
 ### Tests ausführen
 
 ```bash
@@ -84,8 +129,9 @@ npm run meta:test:watch
 
 ### Test-Coverage
 
-✅ **36 Tests** in 7 Kategorien:
+✅ **53 Tests** in 9 Kategorien:
 
+**Metadata Generator (36 Tests):**
 1. **Config Integrity**: Validierung der Konfiguration
 2. **Station Distribution**: Prüfung der 333 NFT-Verteilung
 3. **PRNG Determinism**: Deterministischer Zufallsgenerator
@@ -94,20 +140,36 @@ npm run meta:test:watch
 6. **Score & Tier Mapping**: Score-Berechnung und Tier-Zuordnung
 7. **Metaplex JSON**: Metaplex-Metadaten-Format
 
+**Image Generator (17 Tests):**
+8. **Asset Resolution**: Trait-zu-Asset-Mapping
+9. **Image Compositing**: Layer-Überlagerung und PNG-Generierung
+
 ## Projektstruktur
 
 ```
 nft-trait-randomize/
 ├── tools/
 │   └── meta-gen/
-│       ├── generator.ts              # Hauptgenerator
-│       ├── types.ts                  # TypeScript Typen
-│       ├── metaagen-config.json      # Kollektion-Konfiguration
-│       ├── station-distribution.ts   # Stations-Verteilung
+│       ├── generator.ts                    # Metadata-Generator
+│       ├── image-generator.ts              # Bild-Generator (Layer-Compositing)
+│       ├── create-placeholder-assets.ts    # Placeholder-Asset-Generator
+│       ├── types.ts                        # TypeScript Typen
+│       ├── metaagen-config.json            # Kollektion-Konfiguration
+│       ├── station-distribution.ts         # Stations-Verteilung
+│       ├── assets/                         # Layer-Assets (PNG)
+│       │   ├── background/
+│       │   ├── body/
+│       │   ├── eyes/
+│       │   ├── headwear/
+│       │   ├── mouth/
+│       │   ├── accessory/
+│       │   └── aura/
 │       ├── test/
-│       │   └── generator.test.ts     # Test-Suite
+│       │   ├── generator.test.ts           # Metadata-Tests
+│       │   └── image-generator.test.ts     # Image-Tests
 │       └── out/
-│           └── metadata/             # Generierte JSONs
+│           ├── metadata/                   # Generierte JSON-Metadaten
+│           └── images/                     # Generierte PNG-Bilder
 ├── package.json
 ├── tsconfig.json
 ├── vitest.config.ts
