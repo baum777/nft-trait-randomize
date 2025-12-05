@@ -9,6 +9,7 @@ export type Archetype = "Bull" | "Bear" | "Hybrid";
 export interface TraitConfig {
   name: string;
   category: TraitCategory;
+  asset: string; // Asset filename (e.g., "red-crashing-candles.png")
 }
 
 export interface LayerConfig {
@@ -27,6 +28,11 @@ export interface TierThreshold {
 export interface HeroStation {
   id: number;
   name: string;
+}
+
+export interface CanvasConfig {
+  width: number;
+  height: number;
 }
 
 export interface CollectionConfig {
@@ -51,6 +57,7 @@ export interface HeroJourneyConfig {
 
 export interface MetaGenConfig {
   collection: CollectionConfig;
+  canvas: CanvasConfig;
   scoring: ScoringConfig;
   hero_journey: HeroJourneyConfig;
   layers: LayerConfig[];

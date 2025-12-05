@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "meta:generate": "tsx tools/meta-gen/generator.ts",
+    "image:generate": "tsx tools/meta-gen/image-generator.ts",
     "meta:test": "vitest run tools/meta-gen/test",
     "meta:test:watch": "vitest watch tools/meta-gen/test",
     "test": "vitest run",
@@ -23,5 +24,8 @@
     "tsx": "^4.7.0",
     "typescript": "^5.3.3",
     "vitest": "^1.1.0"
+  },
+  "dependencies": {
+    "sharp": "^0.34.5"
   }
 }

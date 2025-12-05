@@ -9,6 +9,10 @@
     "image_cid": "QmPlaceholder",
     "creator_address": "YourSolanaAddressHere"
   },
+  "canvas": {
+    "width": 1024,
+    "height": 1024
+  },
   "scoring": {
     "categories": {
       "CHAOS": 1,
@@ -47,105 +51,105 @@
       "name": "Background",
       "key": "background",
       "traits": [
-        { "name": "Red Crashing Candles", "category": "CHAOS" },
-        { "name": "Ordinary World Apartment", "category": "CHAOS" },
-        { "name": "Flickering Rugged Basement", "category": "CHAOS" },
-        { "name": "Purple Bleeding Gate", "category": "THRESHOLD" },
-        { "name": "Arena Floor (Bloody)", "category": "THRESHOLD" },
-        { "name": "Green Candle Rain", "category": "THRESHOLD" },
-        { "name": "Dark Void Storm", "category": "ORDEAL_REWARD" },
-        { "name": "Cosmic Surge Rift", "category": "ORDEAL_REWARD" },
-        { "name": "Infinite Cycle (animated)", "category": "MYTHIC" }
+        { "name": "Red Crashing Candles", "category": "CHAOS", "asset": "red-crashing-candles.png" },
+        { "name": "Ordinary World Apartment", "category": "CHAOS", "asset": "ordinary-world-apartment.png" },
+        { "name": "Flickering Rugged Basement", "category": "CHAOS", "asset": "flickering-rugged-basement.png" },
+        { "name": "Purple Bleeding Gate", "category": "THRESHOLD", "asset": "purple-bleeding-gate.png" },
+        { "name": "Arena Floor (Bloody)", "category": "THRESHOLD", "asset": "arena-floor-bloody.png" },
+        { "name": "Green Candle Rain", "category": "THRESHOLD", "asset": "green-candle-rain.png" },
+        { "name": "Dark Void Storm", "category": "ORDEAL_REWARD", "asset": "dark-void-storm.png" },
+        { "name": "Cosmic Surge Rift", "category": "ORDEAL_REWARD", "asset": "cosmic-surge-rift.png" },
+        { "name": "Infinite Cycle (animated)", "category": "MYTHIC", "asset": "infinite-cycle-animated.png" }
       ]
     },
     {
       "name": "Body",
       "key": "body",
       "traits": [
-        { "name": "Skinny Shaking Newbie", "category": "CHAOS" },
-        { "name": "Couch-Potato Degen", "category": "CHAOS" },
-        { "name": "Broke Bear Fur", "category": "CHAOS" },
-        { "name": "Standard Chonk", "category": "THRESHOLD" },
-        { "name": "Scarred & Rug-Burned", "category": "THRESHOLD" },
-        { "name": "Veiny Roided Muscle", "category": "THRESHOLD" },
-        { "name": "Diamond-Crusted Body", "category": "ORDEAL_REWARD" },
-        { "name": "Void-Black Matter Skin", "category": "ORDEAL_REWARD" },
-        { "name": "Transcendent Light Body", "category": "MYTHIC" }
+        { "name": "Skinny Shaking Newbie", "category": "CHAOS", "asset": "skinny-shaking-newbie.png" },
+        { "name": "Couch-Potato Degen", "category": "CHAOS", "asset": "couch-potato-degen.png" },
+        { "name": "Broke Bear Fur", "category": "CHAOS", "asset": "broke-bear-fur.png" },
+        { "name": "Standard Chonk", "category": "THRESHOLD", "asset": "standard-chonk.png" },
+        { "name": "Scarred & Rug-Burned", "category": "THRESHOLD", "asset": "scarred-and-rug-burned.png" },
+        { "name": "Veiny Roided Muscle", "category": "THRESHOLD", "asset": "veiny-roided-muscle.png" },
+        { "name": "Diamond-Crusted Body", "category": "ORDEAL_REWARD", "asset": "diamond-crusted-body.png" },
+        { "name": "Void-Black Matter Skin", "category": "ORDEAL_REWARD", "asset": "void-black-matter-skin.png" },
+        { "name": "Transcendent Light Body", "category": "MYTHIC", "asset": "transcendent-light-body.png" }
       ]
     },
     {
       "name": "Eyes",
       "key": "eyes",
       "traits": [
-        { "name": "Empty Dead-Fish Eyes", "category": "CHAOS" },
-        { "name": "Bloodshot Fear Eyes", "category": "CHAOS" },
-        { "name": "Paperhands Panic Blink", "category": "CHAOS" },
-        { "name": "Weak Laser (flickering)", "category": "THRESHOLD" },
-        { "name": "Classic Red/Green Laser", "category": "THRESHOLD" },
-        { "name": "Battle Rage Eyes", "category": "THRESHOLD" },
-        { "name": "Hypno Swirl", "category": "ORDEAL_REWARD" },
-        { "name": "Popping Void Eyes", "category": "ORDEAL_REWARD" },
-        { "name": "Cosmic Galaxy Eyes", "category": "MYTHIC" }
+        { "name": "Empty Dead-Fish Eyes", "category": "CHAOS", "asset": "empty-dead-fish-eyes.png" },
+        { "name": "Bloodshot Fear Eyes", "category": "CHAOS", "asset": "bloodshot-fear-eyes.png" },
+        { "name": "Paperhands Panic Blink", "category": "CHAOS", "asset": "paperhands-panic-blink.png" },
+        { "name": "Weak Laser (flickering)", "category": "THRESHOLD", "asset": "weak-laser-flickering.png" },
+        { "name": "Classic Red/Green Laser", "category": "THRESHOLD", "asset": "classic-red-green-laser.png" },
+        { "name": "Battle Rage Eyes", "category": "THRESHOLD", "asset": "battle-rage-eyes.png" },
+        { "name": "Hypno Swirl", "category": "ORDEAL_REWARD", "asset": "hypno-swirl.png" },
+        { "name": "Popping Void Eyes", "category": "ORDEAL_REWARD", "asset": "popping-void-eyes.png" },
+        { "name": "Cosmic Galaxy Eyes", "category": "MYTHIC", "asset": "cosmic-galaxy-eyes.png" }
       ]
     },
     {
       "name": "Headwear",
       "key": "headwear",
       "traits": [
-        { "name": "Broken Paperbag Mask", "category": "CHAOS" },
-        { "name": "Ripped Beanie (WIF)", "category": "CHAOS" },
-        { "name": "Backward Cap", "category": "CHAOS" },
-        { "name": "Hood Up (Threshold)", "category": "THRESHOLD" },
-        { "name": "Warband Bandana", "category": "THRESHOLD" },
-        { "name": "Arena Helmet (Cracked)", "category": "THRESHOLD" },
-        { "name": "Diamond Horns", "category": "ORDEAL_REWARD" },
-        { "name": "Void Crown of Thorns", "category": "ORDEAL_REWARD" },
-        { "name": "Halo of Candles", "category": "MYTHIC" }
+        { "name": "Broken Paperbag Mask", "category": "CHAOS", "asset": "broken-paperbag-mask.png" },
+        { "name": "Ripped Beanie (WIF)", "category": "CHAOS", "asset": "ripped-beanie-wif.png" },
+        { "name": "Backward Cap", "category": "CHAOS", "asset": "backward-cap.png" },
+        { "name": "Hood Up (Threshold)", "category": "THRESHOLD", "asset": "hood-up-threshold.png" },
+        { "name": "Warband Bandana", "category": "THRESHOLD", "asset": "warband-bandana.png" },
+        { "name": "Arena Helmet (Cracked)", "category": "THRESHOLD", "asset": "arena-helmet-cracked.png" },
+        { "name": "Diamond Horns", "category": "ORDEAL_REWARD", "asset": "diamond-horns.png" },
+        { "name": "Void Crown of Thorns", "category": "ORDEAL_REWARD", "asset": "void-crown-of-thorns.png" },
+        { "name": "Halo of Candles", "category": "MYTHIC", "asset": "halo-of-candles.png" }
       ]
     },
     {
       "name": "Mouth",
       "key": "mouth",
       "traits": [
-        { "name": "Nervous Bite", "category": "CHAOS" },
-        { "name": "Paperhand Lip Tremble", "category": "CHAOS" },
-        { "name": "Cheap Cigarette Hang", "category": "CHAOS" },
-        { "name": "Troll Grin", "category": "THRESHOLD" },
-        { "name": "Grim Determined Bite", "category": "THRESHOLD" },
-        { "name": "War Scream Mouth", "category": "THRESHOLD" },
-        { "name": "Bloody Fangs", "category": "ORDEAL_REWARD" },
-        { "name": "Rebirth Fire Breath (small)", "category": "ORDEAL_REWARD" },
-        { "name": "Flaming Mouth (eternal)", "category": "MYTHIC" }
+        { "name": "Nervous Bite", "category": "CHAOS", "asset": "nervous-bite.png" },
+        { "name": "Paperhand Lip Tremble", "category": "CHAOS", "asset": "paperhand-lip-tremble.png" },
+        { "name": "Cheap Cigarette Hang", "category": "CHAOS", "asset": "cheap-cigarette-hang.png" },
+        { "name": "Troll Grin", "category": "THRESHOLD", "asset": "troll-grin.png" },
+        { "name": "Grim Determined Bite", "category": "THRESHOLD", "asset": "grim-determined-bite.png" },
+        { "name": "War Scream Mouth", "category": "THRESHOLD", "asset": "war-scream-mouth.png" },
+        { "name": "Bloody Fangs", "category": "ORDEAL_REWARD", "asset": "bloody-fangs.png" },
+        { "name": "Rebirth Fire Breath (small)", "category": "ORDEAL_REWARD", "asset": "rebirth-fire-breath-small.png" },
+        { "name": "Flaming Mouth (eternal)", "category": "MYTHIC", "asset": "flaming-mouth-eternal.png" }
       ]
     },
     {
       "name": "Accessory",
       "key": "accessory",
       "traits": [
-        { "name": "Empty Wallet Chain", "category": "CHAOS" },
-        { "name": "Broken Phone", "category": "CHAOS" },
-        { "name": "'Too-Risky-Bro' Note", "category": "CHAOS" },
-        { "name": "Gold $TOKEN Pendant", "category": "THRESHOLD" },
-        { "name": "Ape Goggles", "category": "THRESHOLD" },
-        { "name": "Katana", "category": "THRESHOLD" },
-        { "name": "Sparkfined Journal Page", "category": "ORDEAL_REWARD" },
-        { "name": "Second Journal (glowing)", "category": "ORDEAL_REWARD" },
-        { "name": "Ancient Rune Blade", "category": "MYTHIC" }
+        { "name": "Empty Wallet Chain", "category": "CHAOS", "asset": "empty-wallet-chain.png" },
+        { "name": "Broken Phone", "category": "CHAOS", "asset": "broken-phone.png" },
+        { "name": "'Too-Risky-Bro' Note", "category": "CHAOS", "asset": "too-risky-bro-note.png" },
+        { "name": "Gold $TOKEN Pendant", "category": "THRESHOLD", "asset": "gold-token-pendant.png" },
+        { "name": "Ape Goggles", "category": "THRESHOLD", "asset": "ape-goggles.png" },
+        { "name": "Katana", "category": "THRESHOLD", "asset": "katana.png" },
+        { "name": "Sparkfined Journal Page", "category": "ORDEAL_REWARD", "asset": "sparkfined-journal-page.png" },
+        { "name": "Second Journal (glowing)", "category": "ORDEAL_REWARD", "asset": "second-journal-glowing.png" },
+        { "name": "Ancient Rune Blade", "category": "MYTHIC", "asset": "ancient-rune-blade.png" }
       ]
     },
     {
       "name": "Aura",
       "key": "aura",
       "traits": [
-        { "name": "Red Blood Drip", "category": "CHAOS" },
-        { "name": "Weak Grey Smoke", "category": "CHAOS" },
-        { "name": "Glitch Static Sparks", "category": "CHAOS" },
-        { "name": "Green Candle Drip", "category": "THRESHOLD" },
-        { "name": "Red+Green Chaos Mix", "category": "THRESHOLD" },
-        { "name": "Volatile Glitch Storm", "category": "THRESHOLD" },
-        { "name": "Eternal Cycle Fire (small)", "category": "ORDEAL_REWARD" },
-        { "name": "Void Particles Rise", "category": "ORDEAL_REWARD" },
-        { "name": "Reality-Warping Rift", "category": "MYTHIC" }
+        { "name": "Red Blood Drip", "category": "CHAOS", "asset": "red-blood-drip.png" },
+        { "name": "Weak Grey Smoke", "category": "CHAOS", "asset": "weak-grey-smoke.png" },
+        { "name": "Glitch Static Sparks", "category": "CHAOS", "asset": "glitch-static-sparks.png" },
+        { "name": "Green Candle Drip", "category": "THRESHOLD", "asset": "green-candle-drip.png" },
+        { "name": "Red+Green Chaos Mix", "category": "THRESHOLD", "asset": "red-green-chaos-mix.png" },
+        { "name": "Volatile Glitch Storm", "category": "THRESHOLD", "asset": "volatile-glitch-storm.png" },
+        { "name": "Eternal Cycle Fire (small)", "category": "ORDEAL_REWARD", "asset": "eternal-cycle-fire-small.png" },
+        { "name": "Void Particles Rise", "category": "ORDEAL_REWARD", "asset": "void-particles-rise.png" },
+        { "name": "Reality-Warping Rift", "category": "MYTHIC", "asset": "reality-warping-rift.png" }
       ]
     }
   ]

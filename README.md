@@ -60,7 +60,9 @@ npm install
 
 ## Usage
 
-### Generator ausführen
+### 1. Metadata Generator
+
+Generiert die JSON-Metadaten für alle 333 NFTs:
 
 ```bash
 # Generiere 333 NFTs mit Standard-Seed
@@ -71,6 +73,22 @@ SEED="my-custom-seed" npm run meta:generate
 ```
 
 Output: `tools/meta-gen/out/metadata/001.json` bis `333.json`
+
+### 2. Image Generator
+
+Erstellt die finalen NFT-Bilder durch Layer-Komposition:
+
+```bash
+# Generiere Bilder aus Metadata
+npm run image:generate
+```
+
+Output: `tools/meta-gen/out/images/001.png` bis `333.png`
+
+**Voraussetzungen:**
+- Metadata muss bereits generiert sein (`npm run meta:generate`)
+- Alle Layer-Assets müssen im `/assets/` Ordner vorhanden sein
+- Siehe `assets/ASSETS-GUIDE.md` für Details zur Asset-Erstellung
 
 ### Tests ausführen
 
@@ -84,8 +102,9 @@ npm run meta:test:watch
 
 ### Test-Coverage
 
-✅ **36 Tests** in 7 Kategorien:
+✅ **43 Tests** in 9 Kategorien:
 
+**Metadata Generator (36 Tests):**
 1. **Config Integrity**: Validierung der Konfiguration
 2. **Station Distribution**: Prüfung der 333 NFT-Verteilung
 3. **PRNG Determinism**: Deterministischer Zufallsgenerator
@@ -94,20 +113,36 @@ npm run meta:test:watch
 6. **Score & Tier Mapping**: Score-Berechnung und Tier-Zuordnung
 7. **Metaplex JSON**: Metaplex-Metadaten-Format
 
+**Image Generator (7 Tests):**
+8. **Canvas Configuration**: Canvas-Größe und Asset-Felder
+9. **Image Composition**: Layer-basierte Bild-Generierung mit Mock-Assets
+
 ## Projektstruktur
 
 ```
 nft-trait-randomize/
+├── assets/                          # Layer-basierte PNG Assets
+│   ├── ASSETS-GUIDE.md             # Asset-Erstellungs-Anleitung
+│   ├── background/                 # 9 Background-Traits
+│   ├── body/                       # 9 Body-Traits
+│   ├── eyes/                       # 9 Eyes-Traits
+│   ├── headwear/                   # 9 Headwear-Traits
+│   ├── mouth/                      # 9 Mouth-Traits
+│   ├── accessory/                  # 9 Accessory-Traits
+│   └── aura/                       # 9 Aura-Traits
 ├── tools/
 │   └── meta-gen/
-│       ├── generator.ts              # Hauptgenerator
-│       ├── types.ts                  # TypeScript Typen
-│       ├── metaagen-config.json      # Kollektion-Konfiguration
-│       ├── station-distribution.ts   # Stations-Verteilung
+│       ├── generator.ts            # Metadata-Generator
+│       ├── image-generator.ts      # Bild-Kompositions-Pipeline
+│       ├── types.ts                # TypeScript Typen
+│       ├── metaagen-config.json    # Kollektion-Konfiguration
+│       ├── station-distribution.ts # Stations-Verteilung
 │       ├── test/
-│       │   └── generator.test.ts     # Test-Suite
+│       │   ├── generator.test.ts   # Metadata-Tests
+│       │   └── image-generator.test.ts # Image-Tests
 │       └── out/
-│           └── metadata/             # Generierte JSONs
+│           ├── metadata/           # Generierte Metadata-JSONs
+│           └── images/             # Generierte NFT-Bilder
 ├── package.json
 ├── tsconfig.json
 ├── vitest.config.ts
@@ -165,6 +200,32 @@ Jedes generierte JSON folgt dem Metaplex-Standard:
   }
 }
 ```
+
+## Image Generation Pipeline
+
+### Layer-basiertes Rendering
+
+Die Bild-Pipeline verwendet **Sharp** für hochperformante PNG-Komposition:
+
+1. **Asset-Auflösung**: Liest Metadata und resolvet Asset-Dateinamen aus Config
+2. **Layer-Reihenfolge**: Compositet Layer in fester Reihenfolge (background → body → headwear → eyes → mouth → accessory → aura)
+3. **Transparenz**: Unterstützt volle Alpha-Channel-Komposition
+4. **Deterministisch**: Gleiche Metadata = identisches Bild
+
+### Canvas-Größe
+
+- **Standard**: 1024×1024 Pixel (konfigurierbar in `metaagen-config.json`)
+- **Format**: PNG mit RGBA (transparenter Hintergrund)
+- **Qualität**: Verlustfreie Kompression
+
+### Asset-Anforderungen
+
+Siehe `assets/ASSETS-GUIDE.md` für vollständige Spezifikationen:
+
+- 63 Assets gesamt (7 Layer × 9 Traits)
+- Alle PNGs exakt 1024×1024 Pixel
+- Transparenter Hintergrund (außer background-Layer)
+- Dateinamen müssen exakt mit Config übereinstimmen
 
 ## Technische Details
 
