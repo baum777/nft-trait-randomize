@@ -1,0 +1,152 @@
+{
+  "collection": {
+    "name": "Surge Bulls & Void Bears",
+    "symbol": "SBVB",
+    "family": "Surge Bulls & Void Bears",
+    "description_base": "A collection of 333 unique NFTs representing the Hero's Journey through market cycles. Each NFT combines Bulls (representing market surges) and Bears (representing market corrections) with traits across 7 layers, scored by rarity and mythic significance.",
+    "seller_fee_basis_points": 500,
+    "image_cid": "QmPlaceholder",
+    "external_url": "https://surgebulls.io",
+    "creator_address": "YourSolanaAddressHere"
+  },
+  "scoring": {
+    "categories": {
+      "CHAOS": 7,
+      "THRESHOLD": 12,
+      "ORDEAL_REWARD": 21,
+      "MYTHIC": 42
+    },
+    "tier_thresholds": [
+      { "tier": 1, "name": "Common", "min": 7, "max": 49 },
+      { "tier": 2, "name": "Uncommon", "min": 50, "max": 63 },
+      { "tier": 3, "name": "Rare", "min": 64, "max": 77 },
+      { "tier": 4, "name": "Epic", "min": 78, "max": 98 },
+      { "tier": 5, "name": "Legendary", "min": 99, "max": 140 },
+      { "tier": 6, "name": "Mythic", "min": 141, "max": 210 },
+      { "tier": 7, "name": "Divine", "min": 211, "max": 294 }
+    ]
+  },
+  "hero_journey": {
+    "stations": [
+      { "id": 1, "name": "Ordinary World" },
+      { "id": 2, "name": "Call to Adventure" },
+      { "id": 3, "name": "Refusal of the Call" },
+      { "id": 4, "name": "Meeting the Mentor" },
+      { "id": 5, "name": "Crossing the Threshold" },
+      { "id": 6, "name": "Tests, Allies, Enemies" },
+      { "id": 7, "name": "Approach to the Inmost Cave" },
+      { "id": 8, "name": "The Ordeal" },
+      { "id": 9, "name": "Reward (Seizing the Sword)" },
+      { "id": 10, "name": "The Road Back" },
+      { "id": 11, "name": "Resurrection" },
+      { "id": 12, "name": "Return with the Elixir" }
+    ]
+  },
+  "layers": [
+    {
+      "name": "Background",
+      "key": "background",
+      "traits": [
+        { "name": "Cosmic Void", "category": "MYTHIC" },
+        { "name": "Golden Sunrise", "category": "ORDEAL_REWARD" },
+        { "name": "Storm Clouds", "category": "THRESHOLD" },
+        { "name": "Desert Dunes", "category": "CHAOS" },
+        { "name": "Ocean Depths", "category": "THRESHOLD" },
+        { "name": "Forest Glen", "category": "CHAOS" },
+        { "name": "Neon City", "category": "ORDEAL_REWARD" },
+        { "name": "Mountain Peak", "category": "THRESHOLD" },
+        { "name": "Starfield", "category": "CHAOS" }
+      ]
+    },
+    {
+      "name": "Body",
+      "key": "body",
+      "traits": [
+        { "name": "Diamond Bull", "category": "MYTHIC" },
+        { "name": "Gold Bull", "category": "ORDEAL_REWARD" },
+        { "name": "Silver Bear", "category": "THRESHOLD" },
+        { "name": "Bronze Bull", "category": "CHAOS" },
+        { "name": "Obsidian Bear", "category": "ORDEAL_REWARD" },
+        { "name": "Emerald Hybrid", "category": "THRESHOLD" },
+        { "name": "Ruby Bull", "category": "CHAOS" },
+        { "name": "Sapphire Bear", "category": "THRESHOLD" },
+        { "name": "Steel Hybrid", "category": "CHAOS" }
+      ]
+    },
+    {
+      "name": "Eyes",
+      "key": "eyes",
+      "traits": [
+        { "name": "Cosmic Vision", "category": "MYTHIC" },
+        { "name": "Laser Eyes", "category": "ORDEAL_REWARD" },
+        { "name": "Glowing Green", "category": "THRESHOLD" },
+        { "name": "Normal Brown", "category": "CHAOS" },
+        { "name": "Ice Blue", "category": "THRESHOLD" },
+        { "name": "Fire Red", "category": "CHAOS" },
+        { "name": "Golden Gaze", "category": "ORDEAL_REWARD" },
+        { "name": "Shadow Black", "category": "THRESHOLD" },
+        { "name": "Crystal Clear", "category": "CHAOS" }
+      ]
+    },
+    {
+      "name": "Headwear",
+      "key": "headwear",
+      "traits": [
+        { "name": "Crown of the Cosmos", "category": "MYTHIC" },
+        { "name": "Champion's Laurel", "category": "ORDEAL_REWARD" },
+        { "name": "Wizard Hat", "category": "THRESHOLD" },
+        { "name": "Baseball Cap", "category": "CHAOS" },
+        { "name": "Viking Helmet", "category": "THRESHOLD" },
+        { "name": "Bandana", "category": "CHAOS" },
+        { "name": "Golden Horns", "category": "ORDEAL_REWARD" },
+        { "name": "Top Hat", "category": "THRESHOLD" },
+        { "name": "Beanie", "category": "CHAOS" }
+      ]
+    },
+    {
+      "name": "Mouth",
+      "key": "mouth",
+      "traits": [
+        { "name": "Cosmic Breath", "category": "MYTHIC" },
+        { "name": "Dragon Fire", "category": "ORDEAL_REWARD" },
+        { "name": "Gritted Teeth", "category": "THRESHOLD" },
+        { "name": "Neutral", "category": "CHAOS" },
+        { "name": "Smirk", "category": "THRESHOLD" },
+        { "name": "Growl", "category": "CHAOS" },
+        { "name": "Golden Fangs", "category": "ORDEAL_REWARD" },
+        { "name": "Cigar", "category": "THRESHOLD" },
+        { "name": "Smile", "category": "CHAOS" }
+      ]
+    },
+    {
+      "name": "Accessory",
+      "key": "accessory",
+      "traits": [
+        { "name": "Infinity Amulet", "category": "MYTHIC" },
+        { "name": "Sword of Victory", "category": "ORDEAL_REWARD" },
+        { "name": "Magic Staff", "category": "THRESHOLD" },
+        { "name": "Simple Chain", "category": "CHAOS" },
+        { "name": "Shield", "category": "THRESHOLD" },
+        { "name": "Compass", "category": "CHAOS" },
+        { "name": "Golden Chalice", "category": "ORDEAL_REWARD" },
+        { "name": "Scroll", "category": "THRESHOLD" },
+        { "name": "Backpack", "category": "CHAOS" }
+      ]
+    },
+    {
+      "name": "Aura",
+      "key": "aura",
+      "traits": [
+        { "name": "Divine Radiance", "category": "MYTHIC" },
+        { "name": "Phoenix Flame", "category": "ORDEAL_REWARD" },
+        { "name": "Electric Storm", "category": "THRESHOLD" },
+        { "name": "None", "category": "CHAOS" },
+        { "name": "Frost Mist", "category": "THRESHOLD" },
+        { "name": "Subtle Glow", "category": "CHAOS" },
+        { "name": "Golden Halo", "category": "ORDEAL_REWARD" },
+        { "name": "Shadow Veil", "category": "THRESHOLD" },
+        { "name": "Sparkles", "category": "CHAOS" }
+      ]
+    }
+  ]
+}
