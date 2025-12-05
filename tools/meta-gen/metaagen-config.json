@@ -1,39 +1,39 @@
 {
   "collection": {
-    "name": "Surge Bulls & Void Bears",
-    "symbol": "SBVB",
-    "family": "Surge Bulls & Void Bears",
-    "description_base": "A collection of 333 unique NFTs representing the Hero's Journey through market cycles. Each NFT combines Bulls (representing market surges) and Bears (representing market corrections) with traits across 7 layers, scored by rarity and mythic significance.",
+    "name": "Surge Bulls & Void Bears – First 333",
+    "symbol": "SURGE",
+    "family": "Sparkfined",
+    "description_base": "Surge Bulls & Void Bears – the first on-chain Hero's Journey on Solana. 333 Bulls & Bears, each one a unique station in the cycle of degen chaos, death, rebirth and mastery.",
     "seller_fee_basis_points": 500,
+    "external_url": "https://sparkfined.xyz/surge",
     "image_cid": "QmPlaceholder",
-    "external_url": "https://surgebulls.io",
     "creator_address": "YourSolanaAddressHere"
   },
   "scoring": {
     "categories": {
-      "CHAOS": 7,
-      "THRESHOLD": 12,
-      "ORDEAL_REWARD": 21,
-      "MYTHIC": 42
+      "CHAOS": 1,
+      "THRESHOLD": 3,
+      "ORDEAL_REWARD": 7,
+      "MYTHIC": 12
     },
     "tier_thresholds": [
-      { "tier": 1, "name": "Common", "min": 7, "max": 49 },
-      { "tier": 2, "name": "Uncommon", "min": 50, "max": 63 },
-      { "tier": 3, "name": "Rare", "min": 64, "max": 77 },
-      { "tier": 4, "name": "Epic", "min": 78, "max": 98 },
-      { "tier": 5, "name": "Legendary", "min": 99, "max": 140 },
-      { "tier": 6, "name": "Mythic", "min": 141, "max": 210 },
-      { "tier": 7, "name": "Divine", "min": 211, "max": 294 }
+      { "tier": 1, "name": "Paperhand Newbie", "min": 7, "max": 17 },
+      { "tier": 2, "name": "Threshold Crosser", "min": 18, "max": 29 },
+      { "tier": 3, "name": "Battle-Hardened Raider", "min": 30, "max": 41 },
+      { "tier": 4, "name": "Death & Rebirth Survivor", "min": 42, "max": 53 },
+      { "tier": 5, "name": "Seizer of the Sword", "min": 54, "max": 63 },
+      { "tier": 6, "name": "Resurrected King", "min": 64, "max": 73 },
+      { "tier": 7, "name": "Master of the Cycle", "min": 74, "max": 84 }
     ]
   },
   "hero_journey": {
     "stations": [
-      { "id": 1, "name": "Ordinary World" },
+      { "id": 1, "name": "The Ordinary World" },
       { "id": 2, "name": "Call to Adventure" },
       { "id": 3, "name": "Refusal of the Call" },
       { "id": 4, "name": "Meeting the Mentor" },
       { "id": 5, "name": "Crossing the Threshold" },
-      { "id": 6, "name": "Tests, Allies, Enemies" },
+      { "id": 6, "name": "Tests, Allies & Enemies" },
       { "id": 7, "name": "Approach to the Inmost Cave" },
       { "id": 8, "name": "The Ordeal" },
       { "id": 9, "name": "Reward (Seizing the Sword)" },
@@ -47,105 +47,105 @@
       "name": "Background",
       "key": "background",
       "traits": [
-        { "name": "Cosmic Void", "category": "MYTHIC" },
-        { "name": "Golden Sunrise", "category": "ORDEAL_REWARD" },
-        { "name": "Storm Clouds", "category": "THRESHOLD" },
-        { "name": "Desert Dunes", "category": "CHAOS" },
-        { "name": "Ocean Depths", "category": "THRESHOLD" },
-        { "name": "Forest Glen", "category": "CHAOS" },
-        { "name": "Neon City", "category": "ORDEAL_REWARD" },
-        { "name": "Mountain Peak", "category": "THRESHOLD" },
-        { "name": "Starfield", "category": "CHAOS" }
+        { "name": "Red Crashing Candles", "category": "CHAOS" },
+        { "name": "Ordinary World Apartment", "category": "CHAOS" },
+        { "name": "Flickering Rugged Basement", "category": "CHAOS" },
+        { "name": "Purple Bleeding Gate", "category": "THRESHOLD" },
+        { "name": "Arena Floor (Bloody)", "category": "THRESHOLD" },
+        { "name": "Green Candle Rain", "category": "THRESHOLD" },
+        { "name": "Dark Void Storm", "category": "ORDEAL_REWARD" },
+        { "name": "Cosmic Surge Rift", "category": "ORDEAL_REWARD" },
+        { "name": "Infinite Cycle (animated)", "category": "MYTHIC" }
       ]
     },
     {
       "name": "Body",
       "key": "body",
       "traits": [
-        { "name": "Diamond Bull", "category": "MYTHIC" },
-        { "name": "Gold Bull", "category": "ORDEAL_REWARD" },
-        { "name": "Silver Bear", "category": "THRESHOLD" },
-        { "name": "Bronze Bull", "category": "CHAOS" },
-        { "name": "Obsidian Bear", "category": "ORDEAL_REWARD" },
-        { "name": "Emerald Hybrid", "category": "THRESHOLD" },
-        { "name": "Ruby Bull", "category": "CHAOS" },
-        { "name": "Sapphire Bear", "category": "THRESHOLD" },
-        { "name": "Steel Hybrid", "category": "CHAOS" }
+        { "name": "Skinny Shaking Newbie", "category": "CHAOS" },
+        { "name": "Couch-Potato Degen", "category": "CHAOS" },
+        { "name": "Broke Bear Fur", "category": "CHAOS" },
+        { "name": "Standard Chonk", "category": "THRESHOLD" },
+        { "name": "Scarred & Rug-Burned", "category": "THRESHOLD" },
+        { "name": "Veiny Roided Muscle", "category": "THRESHOLD" },
+        { "name": "Diamond-Crusted Body", "category": "ORDEAL_REWARD" },
+        { "name": "Void-Black Matter Skin", "category": "ORDEAL_REWARD" },
+        { "name": "Transcendent Light Body", "category": "MYTHIC" }
       ]
     },
     {
       "name": "Eyes",
       "key": "eyes",
       "traits": [
-        { "name": "Cosmic Vision", "category": "MYTHIC" },
-        { "name": "Laser Eyes", "category": "ORDEAL_REWARD" },
-        { "name": "Glowing Green", "category": "THRESHOLD" },
-        { "name": "Normal Brown", "category": "CHAOS" },
-        { "name": "Ice Blue", "category": "THRESHOLD" },
-        { "name": "Fire Red", "category": "CHAOS" },
-        { "name": "Golden Gaze", "category": "ORDEAL_REWARD" },
-        { "name": "Shadow Black", "category": "THRESHOLD" },
-        { "name": "Crystal Clear", "category": "CHAOS" }
+        { "name": "Empty Dead-Fish Eyes", "category": "CHAOS" },
+        { "name": "Bloodshot Fear Eyes", "category": "CHAOS" },
+        { "name": "Paperhands Panic Blink", "category": "CHAOS" },
+        { "name": "Weak Laser (flickering)", "category": "THRESHOLD" },
+        { "name": "Classic Red/Green Laser", "category": "THRESHOLD" },
+        { "name": "Battle Rage Eyes", "category": "THRESHOLD" },
+        { "name": "Hypno Swirl", "category": "ORDEAL_REWARD" },
+        { "name": "Popping Void Eyes", "category": "ORDEAL_REWARD" },
+        { "name": "Cosmic Galaxy Eyes", "category": "MYTHIC" }
       ]
     },
     {
       "name": "Headwear",
       "key": "headwear",
       "traits": [
-        { "name": "Crown of the Cosmos", "category": "MYTHIC" },
-        { "name": "Champion's Laurel", "category": "ORDEAL_REWARD" },
-        { "name": "Wizard Hat", "category": "THRESHOLD" },
-        { "name": "Baseball Cap", "category": "CHAOS" },
-        { "name": "Viking Helmet", "category": "THRESHOLD" },
-        { "name": "Bandana", "category": "CHAOS" },
-        { "name": "Golden Horns", "category": "ORDEAL_REWARD" },
-        { "name": "Top Hat", "category": "THRESHOLD" },
-        { "name": "Beanie", "category": "CHAOS" }
+        { "name": "Broken Paperbag Mask", "category": "CHAOS" },
+        { "name": "Ripped Beanie (WIF)", "category": "CHAOS" },
+        { "name": "Backward Cap", "category": "CHAOS" },
+        { "name": "Hood Up (Threshold)", "category": "THRESHOLD" },
+        { "name": "Warband Bandana", "category": "THRESHOLD" },
+        { "name": "Arena Helmet (Cracked)", "category": "THRESHOLD" },
+        { "name": "Diamond Horns", "category": "ORDEAL_REWARD" },
+        { "name": "Void Crown of Thorns", "category": "ORDEAL_REWARD" },
+        { "name": "Halo of Candles", "category": "MYTHIC" }
       ]
     },
     {
       "name": "Mouth",
       "key": "mouth",
       "traits": [
-        { "name": "Cosmic Breath", "category": "MYTHIC" },
-        { "name": "Dragon Fire", "category": "ORDEAL_REWARD" },
-        { "name": "Gritted Teeth", "category": "THRESHOLD" },
-        { "name": "Neutral", "category": "CHAOS" },
-        { "name": "Smirk", "category": "THRESHOLD" },
-        { "name": "Growl", "category": "CHAOS" },
-        { "name": "Golden Fangs", "category": "ORDEAL_REWARD" },
-        { "name": "Cigar", "category": "THRESHOLD" },
-        { "name": "Smile", "category": "CHAOS" }
+        { "name": "Nervous Bite", "category": "CHAOS" },
+        { "name": "Paperhand Lip Tremble", "category": "CHAOS" },
+        { "name": "Cheap Cigarette Hang", "category": "CHAOS" },
+        { "name": "Troll Grin", "category": "THRESHOLD" },
+        { "name": "Grim Determined Bite", "category": "THRESHOLD" },
+        { "name": "War Scream Mouth", "category": "THRESHOLD" },
+        { "name": "Bloody Fangs", "category": "ORDEAL_REWARD" },
+        { "name": "Rebirth Fire Breath (small)", "category": "ORDEAL_REWARD" },
+        { "name": "Flaming Mouth (eternal)", "category": "MYTHIC" }
       ]
     },
     {
       "name": "Accessory",
       "key": "accessory",
       "traits": [
-        { "name": "Infinity Amulet", "category": "MYTHIC" },
-        { "name": "Sword of Victory", "category": "ORDEAL_REWARD" },
-        { "name": "Magic Staff", "category": "THRESHOLD" },
-        { "name": "Simple Chain", "category": "CHAOS" },
-        { "name": "Shield", "category": "THRESHOLD" },
-        { "name": "Compass", "category": "CHAOS" },
-        { "name": "Golden Chalice", "category": "ORDEAL_REWARD" },
-        { "name": "Scroll", "category": "THRESHOLD" },
-        { "name": "Backpack", "category": "CHAOS" }
+        { "name": "Empty Wallet Chain", "category": "CHAOS" },
+        { "name": "Broken Phone", "category": "CHAOS" },
+        { "name": "'Too-Risky-Bro' Note", "category": "CHAOS" },
+        { "name": "Gold $TOKEN Pendant", "category": "THRESHOLD" },
+        { "name": "Ape Goggles", "category": "THRESHOLD" },
+        { "name": "Katana", "category": "THRESHOLD" },
+        { "name": "Sparkfined Journal Page", "category": "ORDEAL_REWARD" },
+        { "name": "Second Journal (glowing)", "category": "ORDEAL_REWARD" },
+        { "name": "Ancient Rune Blade", "category": "MYTHIC" }
       ]
     },
     {
       "name": "Aura",
       "key": "aura",
       "traits": [
-        { "name": "Divine Radiance", "category": "MYTHIC" },
-        { "name": "Phoenix Flame", "category": "ORDEAL_REWARD" },
-        { "name": "Electric Storm", "category": "THRESHOLD" },
-        { "name": "None", "category": "CHAOS" },
-        { "name": "Frost Mist", "category": "THRESHOLD" },
-        { "name": "Subtle Glow", "category": "CHAOS" },
-        { "name": "Golden Halo", "category": "ORDEAL_REWARD" },
-        { "name": "Shadow Veil", "category": "THRESHOLD" },
-        { "name": "Sparkles", "category": "CHAOS" }
+        { "name": "Red Blood Drip", "category": "CHAOS" },
+        { "name": "Weak Grey Smoke", "category": "CHAOS" },
+        { "name": "Glitch Static Sparks", "category": "CHAOS" },
+        { "name": "Green Candle Drip", "category": "THRESHOLD" },
+        { "name": "Red+Green Chaos Mix", "category": "THRESHOLD" },
+        { "name": "Volatile Glitch Storm", "category": "THRESHOLD" },
+        { "name": "Eternal Cycle Fire (small)", "category": "ORDEAL_REWARD" },
+        { "name": "Void Particles Rise", "category": "ORDEAL_REWARD" },
+        { "name": "Reality-Warping Rift", "category": "MYTHIC" }
       ]
     }
   ]

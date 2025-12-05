@@ -53,10 +53,15 @@ describe("Config Integrity", () => {
 
   it("should have all required scoring categories", () => {
     const categories = config.scoring.categories;
-    expect(categories.CHAOS).toBe(7);
-    expect(categories.THRESHOLD).toBe(12);
-    expect(categories.ORDEAL_REWARD).toBe(21);
-    expect(categories.MYTHIC).toBe(42);
+    expect(categories.CHAOS).toBeDefined();
+    expect(categories.THRESHOLD).toBeDefined();
+    expect(categories.ORDEAL_REWARD).toBeDefined();
+    expect(categories.MYTHIC).toBeDefined();
+
+    // Verify ascending point values
+    expect(categories.CHAOS).toBeLessThan(categories.THRESHOLD);
+    expect(categories.THRESHOLD).toBeLessThan(categories.ORDEAL_REWARD);
+    expect(categories.ORDEAL_REWARD).toBeLessThan(categories.MYTHIC);
   });
 
   it("should have exactly 7 tier thresholds", () => {
@@ -292,15 +297,15 @@ describe("Score Range & Tier Mapping", () => {
     expect(nft.totalScore).toBe(sumOfTraitScores);
   });
 
-  it("should have minimum score of 7*7=49 (all CHAOS)", () => {
-    // Minimum possible score: 7 layers × 7 points (CHAOS)
-    const minPossible = 7 * 7;
+  it("should have minimum score of 7*CHAOS_SCORE (all CHAOS)", () => {
+    // Minimum possible score: 7 layers × CHAOS points
+    const minPossible = 7 * config.scoring.categories.CHAOS;
     expect(config.scoring.tier_thresholds[0].min).toBeLessThanOrEqual(minPossible);
   });
 
-  it("should have maximum score of 7*42=294 (all MYTHIC)", () => {
-    // Maximum possible score: 7 layers × 42 points (MYTHIC)
-    const maxPossible = 7 * 42;
+  it("should have maximum score of 7*MYTHIC_SCORE (all MYTHIC)", () => {
+    // Maximum possible score: 7 layers × MYTHIC points
+    const maxPossible = 7 * config.scoring.categories.MYTHIC;
     expect(config.scoring.tier_thresholds[6].max).toBeGreaterThanOrEqual(maxPossible);
   });
 });
